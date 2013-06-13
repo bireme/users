@@ -33,11 +33,6 @@ class UserResource(ModelResource):
         if user:
             if user.is_active:
 
-                cc = user.profile.cooperative_center
-                ccs = [cc.code]
-                networks = [network.acronym for network in cc.network_set.all()]
-                roles = [role.role_service.role.acronym for role in UserRoleService.objects.filter(user=user, role_service__service__acronym=service)]
-                
                 # if not have roles in this service, is unauthorized
                 if not roles:
                     return self.create_response(request, {'success': False, 'reason': "user doesn't allow to connect"}, HttpUnauthorized)
@@ -46,25 +41,8 @@ class UserResource(ModelResource):
                     'success': True,
                     'data': {
                         'user': user,
-                        'cc': cc,
-                        'ccs': ccs,
-                        'role': roles,
                     }
                 }
-
-                if user.profile.type == "advanced":
-                    
-                    # check if this user is network owner
-                    network_owners = cc.network_set.all().filter(responsible=cc)
-                    
-                    if network_owners:
-                        # getting all centers that this center may see
-                        for network in network_owners:
-                            ccs += network.list_members()
-                        ccs = list(set(ccs))
-
-                    output['ccs'] = ccs
-                    output['networks'] = networks
 
                 login(request, user)
                 return self.create_response(request, output)
