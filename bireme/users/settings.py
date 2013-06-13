@@ -1,5 +1,5 @@
 # coding: utf-8
-# Django settings for accounts project.
+# Django settings for users project.
 
 import os, re
 
@@ -126,10 +126,10 @@ MIDDLEWARE_CLASSES = (
 
 AUTH_PROFILE_MODULE = "main.profile"
 
-ROOT_URLCONF = 'accounts.urls'
+ROOT_URLCONF = 'users.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'accounts.wsgi.application'
+WSGI_APPLICATION = 'users.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
