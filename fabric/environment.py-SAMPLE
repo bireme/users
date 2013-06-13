@@ -1,7 +1,7 @@
 from fabric.api import env
 
 env.user = ''
-env.path = '/home/aplicacoes/accounts/'
+env.path = '/home/aplicacoes/users/'
 env.rootpath = env.path + 'bireme/'
 env.gitpath = env.path + 'git/'
 env.virtualenv = env.path + 'env/'

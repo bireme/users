@@ -4,7 +4,7 @@ from fabric.api import env, local, settings, abort, run, cd
 from fabric.operations import local, put, sudo, get
 from fabric.context_managers import prefix
 
-env.appname = 'accounts'
+env.appname = 'users'
 
 env.user = ''
 env.path = '/home/aplicacoes/' + env.appname + '/'
