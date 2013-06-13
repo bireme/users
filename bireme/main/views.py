@@ -17,8 +17,6 @@ from forms import *
 import mimetypes
 import os
 
-from decorators import *
-
 @login_required
 def dashboard(request):
     

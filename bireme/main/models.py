@@ -1,11 +1,9 @@
 #! coding: utf-8
 from django.utils.translation import ugettext_lazy as _
+from django.db.models.signals import post_save
 from django.contrib.auth.models import User
 from datetime import datetime
 from django.db import models
-from django.db.models.signals import post_save
-
-from utils.models import Generic, Country, LANGUAGES_CHOICES
 
 class Generic(models.Model):
 
@@ -33,11 +31,7 @@ class Profile(models.Model):
         ('advanced', _('Advanced')),
     )
 
-    cooperative_center = models.ForeignKey("CooperativeCenter", verbose_name=_("Cooperative Center"), null=True, blank=True)
     user = models.OneToOneField(User, verbose_name="user") # allow extension of default django User
-    type = models.CharField(_("type"), max_length=30, choices=USER_TYPE_CHOICES, default="basic")
-
-    
 
 # creates automatically and profile
 def create_profile(sender, instance, created, **kwargs):

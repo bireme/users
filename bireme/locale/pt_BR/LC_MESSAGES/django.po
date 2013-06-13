@@ -8,373 +8,224 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-20 17:07-0300\n"
-"PO-Revision-Date: 2013-05-13 12:56-0306\n"
-"Last-Translator:   <moa.moda@gmail.com>\n"
+"POT-Creation-Date: 2013-06-13 11:28-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Translated-Using: django-rosetta 0.7.1\n"
 
-#: main/forms.py:13
-msgid "Type"
-msgstr "Tipo"
-
-#: main/models.py:15 utils/models.py:17
+#: main/models.py:13 utils/models.py:17
 msgid "created"
-msgstr "Criado em"
+msgstr ""
 
-#: main/models.py:16 utils/models.py:18
+#: main/models.py:14 utils/models.py:18
 msgid "updated"
-msgstr "Atualizado em"
+msgstr ""
 
-#: main/models.py:28
+#: main/models.py:26
 msgid "profile"
-msgstr "Perfil"
+msgstr ""
 
-#: main/models.py:29
+#: main/models.py:27
 msgid "profiles"
-msgstr "Perfis"
+msgstr ""
 
-#: main/models.py:32
+#: main/models.py:30
 msgid "Basic"
-msgstr "Básico"
+msgstr ""
 
-#: main/models.py:33
+#: main/models.py:31
 msgid "Advanced"
-msgstr "Avançado"
-
-#: main/models.py:36 main/models.py:202
-msgid "Cooperative Center"
-msgstr "Centro Cooperante"
-
-#: main/models.py:38 main/models.py:183
-msgid "type"
-msgstr "Tipo"
-
-#: main/models.py:72 main/models.py:88
-msgid "role"
-msgstr "papel"
-
-#: main/models.py:73
-msgid "roles"
-msgstr "papeis"
-
-#: main/models.py:75 main/models.py:102 main/models.py:180
-msgid "acronym"
-msgstr "acrônimo"
-
-#: main/models.py:76 main/models.py:90 main/models.py:103 main/models.py:117
-#: main/models.py:154 utils/models.py:33 utils/models.py:47
-msgid "name"
-msgstr "nome"
-
-#: main/models.py:77 main/models.py:91
-msgid "description"
-msgstr "descrição"
-
-#: main/models.py:85
-msgid "role translation"
-msgstr "tradução de papel"
-
-#: main/models.py:86
-msgid "role translations"
-msgstr "traduções de papel"
-
-#: main/models.py:89 main/models.py:116 main/models.py:166 utils/models.py:46
-msgid "language"
-msgstr "linguagem"
-
-#: main/models.py:99 main/models.py:115
-msgid "service"
-msgstr "serviço"
-
-#: main/models.py:100
-msgid "services"
-msgstr "serviços"
-
-#: main/models.py:112
-msgid "service translation"
-msgstr "tradução de serviço"
-
-#: main/models.py:113
-msgid "service translations"
-msgstr "traduções de serviço"
-
-#: main/models.py:138
-msgid "cooperative center"
-msgstr "centro cooperante"
-
-#: main/models.py:139
-msgid "cooperative centers"
-msgstr "centros cooperantes"
-
-#: main/models.py:141 utils/models.py:32
-msgid "code"
-msgstr "código"
-
-#: main/models.py:142 main/models.py:184 utils/models.py:45
-msgid "country"
-msgstr "cidade"
-
-#: main/models.py:143
-msgid "institution"
-msgstr "instituição"
-
-#: main/models.py:151 main/models.py:165 main/models.py:182
-msgid "topic"
-msgstr "tópico"
-
-#: main/models.py:152
-msgid "topics"
-msgstr "tópicos"
-
-#: main/models.py:162
-msgid "topic translation"
-msgstr "tradução de tópico"
-
-#: main/models.py:163
-msgid "topic translations"
-msgstr "traduções de tópicos"
-
-#: main/models.py:172
-msgid "network"
-msgstr "rede"
-
-#: main/models.py:173
-msgid "networks"
-msgstr "redes"
-
-#: main/models.py:176
-msgid "National"
-msgstr "Nacional"
-
-#: main/models.py:177
-msgid "Thematic"
-msgstr "Temática"
-
-#: main/models.py:181
-msgid "Responsible Cooperative Center"
-msgstr "Centro Cooperante Responsável"
-
-#: main/models.py:198
-msgid "Network Membership"
-msgstr "Membros da Rede"
-
-#: main/models.py:199
-msgid "Network Memberships"
-msgstr "Mebro da Rede"
-
-#: main/views.py:74 main/views.py:117 registration/views.py:28
-msgid "User successfully edited."
-msgstr "Usuário editado com sucesso."
-
-#: main/views.py:178 main/views.py:201
-msgid "Network successfully edited."
-msgstr "Rede editada com sucesso."
-
-#: main/views.py:271
-msgid "Service successfully edited."
-msgstr "Serviço editado com sucesso."
-
-#: main/views.py:306
-msgid "Service successfully created."
-msgstr "Serviço criado com sucesso."
-
-#: main/views.py:358
-msgid "Role successfully edited."
-msgstr "Papel editado com sucesso."
-
-#: main/views.py:380
-msgid "Role successfully created."
-msgstr "Papel criado com sucesso."
+msgstr ""
 
 #: main/templates/main/edit-network.html:4
 #: main/templates/main/edit-user.html:7 main/templates/main/roles.html:4
 #: main/templates/main/users.html:4 main/templates/main/users.html.py:7
-#: main/templates/main/users.html:21 templates/menu.html:14
+#: main/templates/main/users.html:21
 msgid "Users"
-msgstr "Usuários"
+msgstr ""
 
 #: main/templates/main/edit-network.html:7 main/templates/main/networks.html:4
 #: main/templates/main/networks.html:7 main/templates/main/networks.html:20
-#: templates/menu.html:15
 msgid "Networks"
-msgstr "Redes"
+msgstr ""
 
 #: main/templates/main/edit-network.html:8
 #: main/templates/main/networks.html:24
 msgid "New Network"
-msgstr "Nova Rede"
+msgstr ""
 
 #: main/templates/main/edit-network.html:9
 #: main/templates/main/edit-network.html:64
 msgid "Edit Network"
-msgstr "Editar Rede"
+msgstr ""
 
 #: main/templates/main/edit-network.html:54
 #: main/templates/main/edit-user.html:55
 msgid "Error"
-msgstr "Erro"
+msgstr ""
 
 #: main/templates/main/edit-network.html:71
-#: main/templates/main/edit-user.html:73
+#: main/templates/main/edit-user.html:78
 msgid "Data"
-msgstr "Dados"
+msgstr ""
 
 #: main/templates/main/edit-network.html:72
 msgid "Included Centers"
-msgstr "Centros Incluidos"
+msgstr ""
 
 #: main/templates/main/edit-network.html:89
 #: main/templates/main/edit-role.html:33
 #: main/templates/main/edit-service.html:49
-#: main/templates/main/edit-user.html:92
+#: main/templates/main/edit-user.html:101
 #: registration/templates/registration/change-password.html:23
 #: registration/templates/registration/change-profile.html:40
 #: registration/templates/registration/password-reset-confirm.html:37
 #: registration/templates/registration/password-reset.html:38
 msgid "Submit"
-msgstr "Enviar"
+msgstr ""
 
 #: main/templates/main/edit-network.html:108
 msgid "Code"
-msgstr "Código"
+msgstr ""
 
 #: main/templates/main/edit-network.html:109
 msgid "Institution"
-msgstr "Instituição"
+msgstr ""
 
 #: main/templates/main/edit-role.html:4 main/templates/main/edit-role.html:9
 #: main/templates/main/edit-role.html:17
 msgid "Edit Role"
-msgstr "Editar Papel"
+msgstr ""
 
 #: main/templates/main/edit-role.html:7
 #: main/templates/main/edit-service.html:33 main/templates/main/roles.html:7
-#: main/templates/main/roles.html.py:20 templates/menu.html:20
+#: main/templates/main/roles.html.py:20
 msgid "Roles"
-msgstr "Papéis"
+msgstr ""
 
 #: main/templates/main/edit-role.html:8 main/templates/main/edit-role.html:17
 #: main/templates/main/roles.html:23
 msgid "New Role"
-msgstr "Novo Papel"
+msgstr ""
 
 #: main/templates/main/edit-service.html:4
 #: main/templates/main/edit-service.html:9
 #: main/templates/main/edit-service.html:17
 msgid "Edit Service"
-msgstr "Editar Serviço"
+msgstr ""
 
 #: main/templates/main/edit-service.html:7 main/templates/main/services.html:4
 #: main/templates/main/services.html:7 main/templates/main/services.html:20
-#: main/templates/main/users.html:50 templates/menu.html:19
+#: main/templates/main/users.html:50
 msgid "Services"
-msgstr "Serviços"
+msgstr ""
 
 #: main/templates/main/edit-service.html:8
 #: main/templates/main/edit-service.html:17
 #: main/templates/main/services.html:23
 msgid "New Service"
-msgstr "Novo Serviço"
+msgstr ""
 
 #: main/templates/main/edit-user.html:4 main/templates/main/users.html:66
 msgid "Edit"
-msgstr "Editar"
+msgstr ""
 
-#: main/templates/main/edit-user.html:9 main/templates/main/edit-user.html:66
+#: main/templates/main/edit-user.html:9 main/templates/main/edit-user.html:71
 #: main/templates/main/users.html:24
 msgid "New User"
-msgstr "Novo Usuário"
+msgstr ""
 
-#: main/templates/main/edit-user.html:11 main/templates/main/edit-user.html:66
+#: main/templates/main/edit-user.html:11 main/templates/main/edit-user.html:71
 msgid "Edit User"
-msgstr "Editar Usuário"
+msgstr ""
 
-#: main/templates/main/edit-user.html:74
+#: main/templates/main/edit-user.html:79
 msgid "Permissions"
-msgstr "Permissões"
+msgstr ""
 
 #: main/templates/main/index.html:4 templates/menu.html:11
 msgid "Dashboard"
-msgstr "Painel de Controle"
+msgstr ""
 
 #: main/templates/main/index.html:12
 msgid "Success!"
-msgstr "Sucesso!"
+msgstr ""
 
 #: main/templates/main/networks.html:32 main/templates/main/networks.html:40
 #: main/templates/main/roles.html:30 main/templates/main/roles.html.py:38
 #: main/templates/main/services.html:30 main/templates/main/services.html:38
 #: main/templates/main/users.html:31 main/templates/main/users.html.py:39
 msgid "Search"
-msgstr "Busca"
+msgstr ""
 
 #: main/templates/main/networks.html:33 main/templates/main/roles.html:31
 #: main/templates/main/services.html:31 main/templates/main/users.html:32
 msgid "clear"
-msgstr "limpar"
+msgstr ""
 
 #: main/templates/main/networks.html:49 main/templates/main/roles.html:47
 #: main/templates/main/services.html:47 main/templates/main/users.html:48
 msgid "Name"
-msgstr "Nome"
+msgstr ""
 
 #: main/templates/main/networks.html:50
 msgid "Center Coordinator"
-msgstr "Centro Cooperante Coordenador"
+msgstr ""
 
 #: main/templates/main/networks.html:51 main/templates/main/roles.html:49
 #: main/templates/main/services.html:49 main/templates/main/users.html:52
 msgid "Actions"
-msgstr "Ações"
+msgstr ""
 
 #: main/templates/main/roles.html:48 main/templates/main/services.html:48
 msgid "Acronym"
-msgstr "Acrônimo"
+msgstr ""
 
 #: main/templates/main/users.html:49
 msgid "Email"
-msgstr "Email"
+msgstr ""
 
 #: main/templates/main/users.html:51
 msgid "Active?"
-msgstr "Ativo?"
+msgstr ""
+
+#: registration/views.py:28
+msgid "User successfully edited."
+msgstr ""
 
 #: registration/templates/registration/change-password-done.html:6
 #: registration/templates/registration/change-password.html:13
-#: templates/menu.html:46
 msgid "Change password"
-msgstr "Trocar senha"
+msgstr ""
 
 #: registration/templates/registration/change-password-done.html:11
 msgid "Password has been changed."
-msgstr "Sua senha foi alterada."
+msgstr ""
 
 #: registration/templates/registration/change-password.html:4
 #: registration/templates/registration/change-password.html:8
 #: registration/templates/registration/change-profile.html:27
-#: templates/menu.html:46
 msgid "Change Password"
-msgstr "Trocar senha"
+msgstr ""
 
 #: registration/templates/registration/change-password.html:7
 #: registration/templates/registration/change-profile.html:7
 msgid "Your Profile"
-msgstr "Seu perfil"
+msgstr ""
 
 #: registration/templates/registration/change-profile.html:4
 #: registration/templates/registration/change-profile.html:8
 msgid "Change Profile"
-msgstr "Editar Perfil"
+msgstr ""
 
 #: registration/templates/registration/change-profile.html:14
 msgid "Edit Your Profile"
-msgstr "Editar Seu Perfil"
+msgstr ""
 
 #: registration/templates/registration/login.html:4
 #: registration/templates/registration/login.html:36
@@ -385,7 +236,7 @@ msgstr "Editar Seu Perfil"
 #: registration/templates/registration/password-reset-done.html:4
 #: registration/templates/registration/password-reset.html:4
 msgid "Login"
-msgstr "Login"
+msgstr ""
 
 #: registration/templates/registration/login.html:28
 #: registration/templates/registration/logout.html:11
@@ -395,19 +246,19 @@ msgstr "Login"
 #: registration/templates/registration/password-reset.html:27
 #: templates/base.html:16
 msgid "BIREME Accounts"
-msgstr "BIREME Accounts"
+msgstr ""
 
 #: registration/templates/registration/login.html:50
 msgid "Forgot my password"
-msgstr "Esqueci minha senha"
+msgstr ""
 
 #: registration/templates/registration/logout.html:16
 msgid "You are logged out. Please"
-msgstr "Você saiu do sistema. Por favor"
+msgstr ""
 
 #: registration/templates/registration/logout.html:17
 msgid "login"
-msgstr "login"
+msgstr ""
 
 #: registration/templates/registration/logout.html:18
 msgid "again clicking below."
@@ -417,25 +268,24 @@ msgstr ""
 #: registration/templates/registration/password-reset-done.html:32
 #: registration/templates/registration/password-reset.html:33
 msgid "Reset Password"
-msgstr "Redefinir Senha"
+msgstr ""
 
 #: registration/templates/registration/password-reset-complete.html:34
 msgid "Your password has been changed."
-msgstr "Sua senha foi alterada."
+msgstr ""
 
 #: registration/templates/registration/password-reset-complete.html:35
 #: registration/templates/registration/password-reset-complete.html:36
 msgid "Go to login"
-msgstr "Ir para tela de login"
+msgstr ""
 
 #: registration/templates/registration/password-reset-confirm.html:32
-#, fuzzy
 msgid "New Password"
-msgstr "Redefinir Senha"
+msgstr ""
 
 #: registration/templates/registration/password-reset-done.html:33
 msgid "We send us a email containing the instructions to procced."
-msgstr "Enviamos um email contendo as instruções para preosseguir."
+msgstr ""
 
 #: templates/base.html:48
 msgid "Centro Latino-Americano e do Caribe de Informação em Ciências da Saúde"
@@ -453,31 +303,23 @@ msgstr ""
 
 #: templates/base.html:51
 msgid "Project source on GitHub"
-msgstr "Código do Projeto no GitHub"
+msgstr ""
 
 #: templates/base.html:51
 msgid "code on github"
-msgstr "código no github"
-
-#: templates/menu.html:21
-msgid "Django Admin"
 msgstr ""
 
-#: templates/menu.html:29 templates/menu.html.py:35
+#: templates/menu.html:18 templates/menu.html.py:24
 msgid "English"
-msgstr "Inglês"
+msgstr ""
 
-#: templates/menu.html:30 templates/menu.html.py:37
+#: templates/menu.html:19 templates/menu.html.py:26
 msgid "Spanish"
-msgstr "Espanhol"
+msgstr ""
 
-#: templates/menu.html:31 templates/menu.html.py:36
+#: templates/menu.html:20 templates/menu.html.py:25
 msgid "Portuguese"
-msgstr "Português"
-
-#: templates/menu.html:45
-msgid "Edit profile"
-msgstr "Editar perfil"
+msgstr ""
 
 #: templates/admin/base_site.html:4
 msgid "Django site admin"
@@ -485,34 +327,43 @@ msgstr ""
 
 #: templates/admin/base_site.html:7
 msgid "BIREME Accounts administration"
-msgstr "Administração do BIREME Accounts"
+msgstr ""
 
 #: templates/admin/base_site.html:13
 msgid "Translations"
-msgstr "Traduções"
+msgstr ""
 
-#: templates/registration/password_reset_email.html:17
+#: templates/registration/password_reset_email.html:5
+msgid ""
+"Hello, You have just been registered in BIREME Accounts system. Please "
+"complete your registration to have access to BIREME services."
+msgstr ""
+
+#: templates/registration/password_reset_email.html:7
+#: templates/registration/password_reset_email.html:20
+msgid "Please go to the following page and choose a new password:"
+msgstr ""
+
+#: templates/registration/password_reset_email.html:11
+#: templates/registration/password_reset_email.html:26
+msgid "Thanks for using our site!"
+msgstr ""
+
+#: templates/registration/password_reset_email.html:13
+#: templates/registration/password_reset_email.html:28
+#, python-format
+msgid "The %(site_name)s team"
+msgstr ""
+
+#: templates/registration/password_reset_email.html:18
 #, python-format
 msgid ""
 "You're receiving this email because you requested a password reset for your "
 "user account at %(site_name)s."
 msgstr ""
 
-#: templates/registration/password_reset_email.html:19
-msgid "Please go to the following page and choose a new password:"
-msgstr ""
-
-#: templates/registration/password_reset_email.html:23
+#: templates/registration/password_reset_email.html:24
 msgid "Your username, in case you've forgotten:"
-msgstr ""
-
-#: templates/registration/password_reset_email.html:25
-msgid "Thanks for using our site!"
-msgstr ""
-
-#: templates/registration/password_reset_email.html:27
-#, python-format
-msgid "The %(site_name)s team"
 msgstr ""
 
 #: templates/registration/password_reset_subject.txt:4
@@ -520,6 +371,21 @@ msgid "Create your password to access our systems"
 msgstr ""
 
 #: templates/registration/password_reset_subject.txt:6
-#, fuzzy
 msgid "Reset your password"
-msgstr "Redefinir Senha"
+msgstr ""
+
+#: utils/models.py:32
+msgid "code"
+msgstr ""
+
+#: utils/models.py:33 utils/models.py:47
+msgid "name"
+msgstr ""
+
+#: utils/models.py:45
+msgid "country"
+msgstr ""
+
+#: utils/models.py:46
+msgid "language"
+msgstr ""
