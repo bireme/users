@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Users" %} | {{ block.super }}{% endblock %}
+
+{% block breadcrumb %}
+    <li>{% trans "Users" %}</li>
+{% endblock %}
+
+{% block content %}
+
+<form name="actions">
+    <input type="hidden" name="orderby" value="{{ actions.orderby }}">
+    <input type="hidden" name="order" value="{{ actions.order }}">
+    <input type="hidden" name="page" value="{{ actions.page }}">
+    <input type='hidden' name="s"  value="{{ actions.s }}">
+</form>
+
+<!--  header -->
+<div class='header'>
+    <h2><i class='icon-group'></i> {% trans "Users" %}</h2>
+
+    <div class='pull-right'>
+        <a href="{% url 'main.views.new_user' %}" class='btn btn-primary' title="{% trans "New User" %}"><i class='icon-file'></i> {% trans "New User" %}</a>
+    </div>
+</div>
+
+<div class='body'>
+    {% if actions.s %}
+        <div>
+            {% trans "Search" %}: <strong>{{ actions.s }}</strong> 
+            <a href="{% url 'main.views.users' %}">[{% trans "clear" %}]</a>
+        </div>
+    {% endif %}
+
+    <div class='pull-right'>
+        <div class="input-append">
+            <form name="search" onSubmit="return search();">
+                <input type='text' name="s"  value="{{ actions.s }}" placeholder="{% trans "Search" %}">
+                <button class="btn" type="submit"><i class='icon-search'></i></button>
+            </form>
+        </div>
+    </div>
+
+    <table class='table'>
+        <thead>
+            <th><a href="javascript:orderby('id');" id="id_id">#</a></th>
+            <th><a href="javascript:orderby('username');" id="id_username">{% trans "Name" %}</a></th>
+            <th><a href="javascript:orderby('email');" id="id_email">{% trans "Email" %}</a></th>
+            <th><a href="javascript:orderby('services');" id="id_email">{% trans "Services" %}</a></th>
+            <th><a href="javascript:orderby('is_active');" id="id_is_active">{% trans "Active?" %}</a></th>
+            <th>{% trans "Actions" %}</th>
+        </thead>
+        <tbody>
+            {% for user in users %}
+                <tr>
+                    <td>{{ user.id }}</td>
+                    <td>{{ user }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{% for service, roles in user.profile.get_role_services.items %}
+                        
+                        <span title="{% for role in roles %}{{ role }}{% if not forloop.last %}, {% endif %}{% endfor %}">{{ service }}</span>
+                        {% if not forloop.last %} | {% endif %}
+                    {% endfor %}</td>
+                    <td>{% if user.is_active %}<i class='icon-ok'></i>{% else %}<i class='icon-minus-sign'></i>{% endif %}</td>
+                    <td><a href="{% url 'main.views.edit_user' user.id %}" class='btn btn-mini' title="{% trans 'Edit' %}"><i class='icon-pencil'></i></a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div> 
+{% endblock %}
