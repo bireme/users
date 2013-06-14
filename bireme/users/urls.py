@@ -17,7 +17,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^i18n/', include('django.conf.urls.i18n')),
     
-    url(r'^users/', include("registration.urls")),
+    url(r'^accounts/', include("registration.urls")),
     url(r'^api/', include("api.urls")),
     url(r'^', include('utils.urls')),
     url(r'^', include('main.urls')),
