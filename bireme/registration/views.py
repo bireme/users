@@ -20,15 +20,22 @@ def change_profile(request):
     user = request.user
     output = {}
 
-    form = ChangeProfileForm(instance=user)
+    form = ChangeUserForm(instance=user)
+    form_user = ChangeProfileForm(instance=user.profile)
+
     if request.POST:
         form = ChangeProfileForm(request.POST, request.FILES, instance=user)
+        form_user = ChangeUserForm(request.POST, request.FILES, instance=user.profile)
         if form.is_valid():
             form.save()
-            output['alert'] = _("User successfully edited.")
-            output['alerttype'] = "alert-success"
+            if form_user.is_valid():
+                form_user.save()
+                    
+                output['alert'] = _("User successfully edited.")
+                output['alerttype'] = "alert-success"
 
     output['user'] = user
     output['form'] = form
+    output['form_user'] = form_user
 
     return render_to_response('registration/change-profile.html', output, context_instance=RequestContext(request))
